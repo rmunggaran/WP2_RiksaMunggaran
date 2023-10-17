@@ -9,8 +9,8 @@
     <center>
         Input Data mahasiswa
     </center>
-    <form action="<?php echo base_url(). 'index.php/kampus/tambah_aksi'; ?>" method="post" enctype="multipard/form-data">
-        <table>
+    <form action="<?php echo base_url() . 'index.php/kampus/tambah_aksi'; ?>" method="post" enctype="multipart/form-data">
+    <table>
         <tr>
             <td>NIM</td>
             <td><input type="text" name="nim"></td>
@@ -20,18 +20,23 @@
             <td><input type="text" name="nama"></td>
         </tr>
         <tr>
-            <td>alamat</td>
+            <td>Alamat</td>
             <td><input type="text" name="alamat"></td>
         </tr>
         <tr>
-            <td>pekerjaan</td>
+            <td>Pekerjaan</td>
             <td><input type="text" name="pekerjaan"></td>
+        </tr>
+        <tr>
+            <td>Upload Foto</td>
+            <td><input type="file" name="foto"></td>
         </tr>
         <tr>
             <td></td>
             <td><input type="submit" value="Tambah"><input type="reset" value="Batal"></td>
         </tr>
-        </table>
-    </form>
+    </table>
+</form>
+
 </body>
 </html>
